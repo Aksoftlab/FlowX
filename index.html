@@ -1,130 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>FlowX</title>
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
-}
-
-body{
-    background:#f5f5f5;
-    color:#333;
-}
-
-/* Header */
-.header{
-    background:#009688;
-    color:#fff;
-    text-align:center;
-    padding:18px 15px;
-    border-radius:0 0 22px 22px;
-    box-shadow:0 3px 12px rgba(0,0,0,.15);
-}
-
-.header h1{
-    font-size:32px;
-    font-weight:700;
-    letter-spacing:.5px;
-}
-
-.header p{
-    margin-top:4px;
-    font-size:13px;
-    opacity:.95;
-}
-
-/* Container */
-.container{
-    width:100%;
-    max-width:1000px;
-    margin:20px auto;
-    padding:0 15px;
-}
-
-/* Image Card */
-.image-card{
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 4px 15px rgba(0,0,0,.12);
-}
-
-.image-card img{
-    display:block;
-    width:100%;
-    height:auto;
-}
-
-/* Tablet */
-@media (max-width:768px){
-
-.header{
-    padding:16px 12px;
-}
-
-.header h1{
-    font-size:28px;
-}
-
-.header p{
-    font-size:12px;
-}
-
-.container{
-    margin:15px auto;
-    padding:0 12px;
-}
-
-}
-
-/* Mobile */
-@media (max-width:480px){
-
-.header{
-    padding:14px 10px;
-    border-radius:0 0 18px 18px;
-}
-
-.header h1{
-    font-size:24px;
-}
-
-.header p{
-    font-size:11px;
-}
-
-.container{
-    margin:12px auto;
-    padding:0 10px;
-}
-
-.image-card{
-    border-radius:14px;
-}
-
-}
-</style>
-
-</head>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#f4f7f7;color:#333}
+.header{background:#009688;color:#fff;text-align:center;padding:18px;border-radius:0 0 20px 20px;box-shadow:0 4px 10px rgba(0,0,0,.2)}
+.header h1{font-size:2rem}.header p{font-size:.9rem}
+.container{max-width:1050px;margin:auto;padding:16px}
+.card{background:#fff;border-radius:18px;padding:22px;margin:18px 0;box-shadow:0 8px 20px rgba(0,0,0,.08);transition:.35s}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 28px rgba(0,150,136,.25)}
+img{width:100%;border-radius:16px}
+h2{color:#009688;margin-bottom:10px}ul{padding-left:20px}li{margin:8px 0}
+.btn{display:inline-block;background:#009688;color:#fff;text-decoration:none;padding:14px 28px;border-radius:50px;font-weight:600}
+.btn:hover{background:#00796B}
+.dev a{color:#009688;text-decoration:none}
+footer{text-align:center;background:#009688;color:#fff;padding:16px;margin-top:25px}
+.fade{opacity:0;transform:translateY(25px);transition:all .8s}.fade.show{opacity:1;transform:none}
+</style></head>
 <body>
-
-<div class="header">
-    <h1>FlowX</h1>
-    <p>DRA'S #1 Field App</p>
-</div>
-
+<div class="header"><h1>FlowX</h1><p>DRA'S #1 Field App</p></div>
 <div class="container">
-    <div class="image-card">
-        <img src="https://raw.githubusercontent.com/Aksoftlab/FlowX/refs/heads/main/1783216041611.png" alt="FlowX">
-    </div>
+<div class="card fade"><img src="https://raw.githubusercontent.com/Aksoftlab/FlowX/refs/heads/main/1783216041611.png"></div>
+<div class="card fade"><h2>What is FlowX?</h2><p>FlowX is a smart field collection and loan recovery application designed to replace traditional paper allocations and repetitive spreadsheet work. It empowers field executives with a complete digital allocation system, enabling faster decisions, accurate customer tracking, and seamless collection management directly from a mobile device.</p></div>
+<div class="card fade"><h2>Why FlowX?</h2><ul>
+<li>Digital customer allocation instead of printed sheets.</li>
+<li>Instant customer search without opening Excel files repeatedly.</li>
+<li>One-tap customer calling.</li>
+<li>Quick feedback recording after every visit.</li>
+<li>Promise-to-Pay tracking with reminders.</li>
+<li>Collection performance monitoring in real time.</li>
+<li>Separate Hard Resolution cases for better follow-up.</li>
+<li>Access your work anytime, anywhere.</li>
+</ul></div>
+<div class="card fade"><h2>Benefits for Field Executives</h2><p>FlowX saves time, reduces paperwork, minimizes errors, improves follow-up efficiency, and keeps every customer interaction organized. Everything required during field recovery is available in one professional mobile application.</p></div>
+<div class="card fade" style="text-align:center"><h2>Download FlowX</h2>
+<a class="btn" href="https://github.com/Aksoftlab/FlowX/releases/download/V.2.3/FlowX_2.3.apk">Download APK</a></div>
+<div class="card dev fade"><h2>Developer Details</h2>
+<p><b>Organization:</b> AkSoftLab</p>
+<p><b>Developer:</b> Nishant Kashyap</p>
+<p><b>Email:</b> <a href="mailto:aksoftlab@gmail.com">aksoftlab@gmail.com</a></p>
+<p><b>WhatsApp:</b> <a href="https://wa.me/918393834583">Chat on WhatsApp</a></p>
 </div>
-
-</body>
-</html>
+</div>
+<footer>© 2026 AkSoftLab. All Rights Reserved.</footer>
+<script>
+const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('show')}));
+document.querySelectorAll('.fade').forEach(i=>o.observe(i));
+</script></body></html>
